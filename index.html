@@ -3,43 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pazarola | Canli Pazar Yeri</title>
+    <title>Pazarola | Canlı Pazar Yeri</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="topbar">
       <a class="brand" href="#"><span class="brand-mark">P</span><span>Pazarola</span></a>
-      <label class="search"><span>Ara</span><input id="searchInput" type="search" placeholder="Urun, magaza veya kategori ara" /></label>
+      <label class="search"><span>Ara</span><input id="searchInput" type="search" placeholder="Ürün, mağaza veya kategori ara" /></label>
       <nav class="nav-actions">
-        <a href="#catalog">Urunler</a><a href="#shops">Magazalar</a><a href="#seller">Satici Ol</a>
+        <a href="#catalog">Ürünler</a><a href="#shops">Mağazalar</a><a href="#seller">Satıcı Ol</a>
         <button class="cart-trigger" id="cartButton" type="button">Sepet <strong id="cartCount">0</strong></button>
       </nav>
     </header>
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Bagimsiz saticilarin canli vitrini</p>
+          <p class="eyebrow">Bağımsız satıcıların canlı vitrini</p>
           <h1>Pazarola</h1>
-          <p>Etsy ve Shopier ruhunu Turkiye odakli, renkli ve dinamik bir pazar yeri deneyimine donusturuyoruz.</p>
-          <div class="hero-actions"><a class="primary-action" href="#catalog">Vitrine Gir</a><a class="ghost-action" href="#seller">Magazani Ac</a></div>
+          <p>Etsy ve Shopier ruhunu Türkiye odaklı, renkli ve dinamik bir pazar yeri deneyimine dönüştürüyoruz.</p>
+          <div class="hero-actions"><a class="primary-action" href="#catalog">Vitrine Gir</a><a class="ghost-action" href="#seller">Mağazanı Aç</a></div>
         </div>
         <div class="hero-stage">
-          <img src="assets/marketplace-visual.svg" alt="Renkli el yapimi urunlerden olusan pazar yeri vitrini" />
-          <div class="floating-card card-hot"><span>Canli kampanya</span><strong id="dealTicker">12:00</strong></div>
-          <div class="floating-card card-score"><span>Bugun</span><strong>327 siparis</strong></div>
+          <img src="assets/marketplace-visual.svg" alt="Renkli el yapımı ürünlerden oluşan pazar yeri vitrini" />
+          <div class="floating-card card-hot"><span>Canlı kampanya</span><strong id="dealTicker">12:00</strong></div>
+          <div class="floating-card card-score"><span>Bugün</span><strong>327 sipariş</strong></div>
         </div>
       </section>
-      <section class="ticker"><div><span>Yeni satici basvurulari acik</span><span>Tek sepet, coklu magaza</span><span>Haftanin vitrin secimleri yayinda</span><span>Yerel ureticiler icin hizli magaza kurulumu</span></div></section>
-      <section class="quick-stats"><article><strong data-count-to="420">0</strong><span>aktif satici</span></article><article><strong data-count-to="8900">0</strong><span>urun listesi</span></article><article><strong data-count-to="96">0</strong><span>memnuniyet puani</span></article><article><strong data-count-to="24">0</strong><span>saatte onay hedefi</span></article></section>
+      <section class="ticker"><div><span>Yeni satıcı başvuruları açık</span><span>Tek sepet, çoklu mağaza</span><span>Haftanın vitrin seçimleri yayında</span><span>Yerel üreticiler için hızlı mağaza kurulumu</span></div></section>
+      <section class="quick-stats"><article><strong data-count-to="420">0</strong><span>aktif satıcı</span></article><article><strong data-count-to="8900">0</strong><span>ürün listesi</span></article><article><strong data-count-to="96">0</strong><span>memnuniyet puanı</span></article><article><strong data-count-to="24">0</strong><span>saatte onay hedefi</span></article></section>
       <section class="catalog-section" id="catalog">
-        <div class="section-heading"><div><p class="eyebrow">Dinamik vitrin</p><h2>Kesfetmeye deger urunler</h2></div><div class="sort-control"><label for="sortSelect">Sirala</label><select id="sortSelect"><option value="featured">One cikan</option><option value="newest">En yeni</option><option value="priceLow">En dusuk fiyat</option><option value="priceHigh">En yuksek fiyat</option><option value="rating">En yuksek puan</option></select></div></div>
+        <div class="section-heading"><div><p class="eyebrow">Dinamik vitrin</p><h2>Keşfetmeye değer ürünler</h2></div><div class="sort-control"><label for="sortSelect">Sırala</label><select id="sortSelect"><option value="featured">Öne çıkan</option><option value="newest">En yeni</option><option value="priceLow">En düşük fiyat</option><option value="priceHigh">En yüksek fiyat</option><option value="rating">En yüksek puan</option></select></div></div>
         <div class="category-tabs" id="categoryTabs"></div>
-        <div class="catalog-layout"><aside class="spotlight"><span>Haftanin magazasi</span><h3 id="spotlightShop">Atolye Mira</h3><p id="spotlightText">Dokuma, kumas ve ev aksesuarlariyla sicak bir vitrin.</p><button id="shuffleSpotlight" type="button">Magaza Degistir</button></aside><div class="product-grid" id="productGrid"></div></div>
+        <div class="catalog-layout"><aside class="spotlight"><span>Haftanın mağazası</span><h3 id="spotlightShop">Atölye Mira</h3><p id="spotlightText">Dokuma, kumaş ve ev aksesuarlarıyla sıcak bir vitrin.</p><button id="shuffleSpotlight" type="button">Mağaza Değiştir</button></aside><div class="product-grid" id="productGrid"></div></div>
       </section>
-      <section class="shops-section" id="shops"><div class="section-heading"><div><p class="eyebrow">Magazalar</p><h2>Satici vitrinleri</h2></div><span class="section-note">Her magaza kendi hikayesi, urunleri ve takipci kitlesiyle acilir.</span></div><div class="shop-strip" id="shopStrip"></div></section>
-      <section class="seller-section" id="seller"><div class="seller-copy"><p class="eyebrow">Satici paneli taslagi</p><h2>Magazani yayina almak icin ilk bilgileri topla.</h2><p>Bu alan ileride gercek satici paneline baglanacak: basvuru, belge kontrolu, urun ekleme, stok ve siparis yonetimi burada adim adim buyuyecek.</p></div><form class="seller-form"><label>Magaza adi<input type="text" name="shopName" placeholder="Orn. Renkli Atolye" required /></label><label>E-posta<input type="email" name="email" placeholder="satici@ornek.com" required /></label><label>Ana kategori<select name="category"><option>El yapimi ve tasarim</option><option>Giyim ve aksesuar</option><option>Ev ve yasam</option><option>Gurme urunler</option></select></label><button type="submit">Basvuru Taslagi Olustur</button><p id="sellerStatus" class="form-status"></p></form></section>
+      <section class="shops-section" id="shops"><div class="section-heading"><div><p class="eyebrow">Mağazalar</p><h2>Satıcı vitrinleri</h2></div><span class="section-note">Her mağaza kendi hikayesi, ürünleri ve takipçi kitlesiyle açılır.</span></div><div class="shop-strip" id="shopStrip"></div></section>
+      <section class="seller-section" id="seller"><div class="seller-copy"><p class="eyebrow">Satıcı paneli taslağı</p><h2>Mağazanı yayına almak için ilk bilgileri topla.</h2><p>Bu alan ileride gerçek satıcı paneline bağlanacak: başvuru, belge kontrolü, ürün ekleme, stok ve sipariş yönetimi burada adım adım büyüyecek.</p></div><form class="seller-form"><label>Mağaza adı<input type="text" name="shopName" placeholder="Örn. Renkli Atölye" required /></label><label>E-posta<input type="email" name="email" placeholder="satici@ornek.com" required /></label><label>Ana kategori<select name="category"><option>El yapımı ve tasarım</option><option>Giyim ve aksesuar</option><option>Ev ve yaşam</option><option>Gurme ürünler</option></select></label><button type="submit">Başvuru Taslağı Oluştur</button><p id="sellerStatus" class="form-status"></p></form></section>
     </main>
-    <aside class="cart-panel" id="cartPanel"><div class="cart-header"><h2>Sepet</h2><button class="close-cart" id="closeCart" type="button">Kapat</button></div><div id="cartItems" class="cart-items"></div><div class="cart-footer"><div><span>Toplam</span><strong id="cartTotal">0 TL</strong></div><button type="button">Odeme Akisina Gec</button></div></aside>
+    <aside class="cart-panel" id="cartPanel"><div class="cart-header"><h2>Sepet</h2><button class="close-cart" id="closeCart" type="button">Kapat</button></div><div id="cartItems" class="cart-items"></div><div class="cart-footer"><div><span>Toplam</span><strong id="cartTotal">0 TL</strong></div><button type="button">Ödeme Akışına Geç</button></div></aside>
     <div class="scrim" id="scrim"></div>
     <script src="script.js"></script>
   </body>
