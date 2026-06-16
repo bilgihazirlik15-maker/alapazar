@@ -1,0 +1,283 @@
+@media (max-width: 1080px) {
+  .topbar {
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    padding: 12px 18px;
+  }
+
+  .search {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+
+  .hero,
+  .catalog-layout,
+  .seller-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    gap: 28px;
+    min-height: auto;
+    padding-top: 48px;
+  }
+
+  .hero-copy {
+    max-width: 760px;
+  }
+
+  .hero-stage {
+    min-height: auto;
+  }
+
+  .spotlight {
+    position: relative;
+    top: auto;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shop-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .topbar {
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 10px 14px;
+  }
+
+  .brand {
+    min-width: 0;
+    font-size: 1rem;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .nav-actions a {
+    display: none;
+  }
+
+  .cart-trigger {
+    min-height: 38px;
+    padding: 0 12px;
+    font-size: 0.86rem;
+  }
+
+  .search input {
+    min-height: 42px;
+    padding-left: 50px;
+    font-size: 0.92rem;
+  }
+
+  .hero {
+    padding: 34px 16px 30px;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+  }
+
+  .eyebrow {
+    margin-bottom: 12px;
+    font-size: 0.72rem;
+    line-height: 1.35;
+  }
+
+  h1 {
+    margin-bottom: 16px;
+    font-size: clamp(3.15rem, 16vw, 4.45rem);
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: clamp(1.65rem, 8vw, 2.25rem);
+    line-height: 1.08;
+  }
+
+  .hero-copy p:not(.eyebrow) {
+    max-width: 100%;
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .primary-action,
+  .ghost-action {
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 16px;
+    font-size: 0.9rem;
+  }
+
+  .hero-stage img {
+    height: 300px;
+    min-height: 0;
+    border-radius: 20px;
+  }
+
+  .floating-card {
+    position: static;
+    margin-top: 10px;
+    padding: 12px 14px;
+    border-radius: 14px;
+  }
+
+  .ticker div {
+    gap: 24px;
+    padding: 11px 0;
+    animation-duration: 30s;
+  }
+
+  .ticker span {
+    font-size: 0.86rem;
+  }
+
+  .quick-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    padding: 18px 14px;
+  }
+
+  .quick-stats article {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .quick-stats strong {
+    font-size: 1.65rem;
+  }
+
+  .catalog-section,
+  .shops-section,
+  .seller-section {
+    padding: 48px 14px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .sort-control {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sort-control select {
+    width: min(210px, 62vw);
+  }
+
+  .category-tabs {
+    flex-wrap: nowrap;
+    gap: 8px;
+    overflow-x: auto;
+    margin-inline: -14px;
+    padding: 0 14px 10px;
+    scrollbar-width: none;
+  }
+
+  .category-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab {
+    flex: 0 0 auto;
+    min-height: 38px;
+    padding: 0 13px;
+    font-size: 0.88rem;
+  }
+
+  .catalog-layout {
+    gap: 16px;
+  }
+
+  .spotlight {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .product-grid,
+  .shop-strip {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .product-card,
+  .shop-card,
+  .seller-form {
+    border-radius: 18px;
+  }
+
+  .product-image,
+  .product-image img {
+    height: 210px;
+    min-height: 210px;
+  }
+
+  .product-info h3 {
+    min-height: 0;
+  }
+
+  .shop-card img {
+    height: 176px;
+  }
+
+  .seller-section {
+    gap: 22px;
+  }
+
+  .seller-form {
+    padding: 16px;
+  }
+
+  .cart-panel {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .quick-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .primary-action,
+  .ghost-action {
+    width: 100%;
+  }
+
+  .cart-row {
+    grid-template-columns: 54px 1fr;
+  }
+
+  .cart-row strong {
+    grid-column: 2;
+  }
+}
