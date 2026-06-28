@@ -1,13 +1,20 @@
 @media (max-width: 1080px) {
   .topbar {
-    grid-template-columns: 1fr auto;
-    gap: 12px;
+    gap: 10px;
     padding: 12px 18px;
   }
 
-  .search {
-    grid-column: 1 / -1;
-    order: 3;
+  .topbar-main {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .header-search-row {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-links {
+    overflow-x: auto;
   }
 
   .hero,
@@ -50,8 +57,29 @@
   }
 
   .topbar {
-    grid-template-columns: minmax(0, 1fr) auto;
     padding: 10px 14px;
+  }
+
+  .topbar-main {
+    gap: 10px;
+  }
+
+  .header-search-row {
+    gap: 8px;
+  }
+
+  .quick-link {
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 0.8rem;
+  }
+
+  .category-strip {
+    font-size: 0.78rem;
+  }
+
+  .category-strip a {
+    padding: 0 8px;
   }
 
   .brand {
