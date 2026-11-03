@@ -106,9 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
   control.setAttribute('aria-label', 'Dil seçimi');
   control.setAttribute('data-no-translate', '');
   control.innerHTML = '<option value="tr">Türkçe</option><option value="en">English</option>';
-  document.querySelector('.nav-actions').prepend(control);
+  document.querySelector('.nav-actions').append(control);
   const style = document.createElement('style');
-  style.textContent = '#languageSelect{height:38px;min-height:38px;padding:0 10px;border-radius:999px;font-size:.86rem;flex-shrink:0}.nav-actions{flex-wrap:wrap}html[lang="en"] .search.market-search input{padding-left:80px}@media(max-width:720px){.topbar-main{width:100%}.nav-actions{gap:8px;width:100%}#languageSelect{max-width:110px}}';
+  style.textContent = 'html[lang="en"] .search.market-search input{padding-left:80px}';
   document.head.append(style);
   money = value => new Intl.NumberFormat(language === 'en' ? 'en-GB' : 'tr-TR', {style:'currency',currency:'TRY',maximumFractionDigits:0}).format(value);
   visibleProducts = function () {

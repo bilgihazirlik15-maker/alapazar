@@ -1,0 +1,54 @@
+/* Compact navigation with the language control at the far right. */
+.topbar { gap: 8px; padding-top: 8px; padding-bottom: 8px; }
+.topbar-main { min-height: 38px; gap: 14px; }
+.brand { font-size: 17px; gap: 8px; }
+.brand-mark { width: 36px; height: 36px; }
+.nav-actions { gap: 8px; font-size: 12px; font-weight: 500; }
+.nav-actions > a { padding: 7px 6px; border-radius: 8px; }
+.nav-actions > a:hover { background: #f6ecdf; transform: none; }
+.nav-actions .cart-trigger,
+.nav-actions .signup-trigger,
+.nav-actions .login-trigger,
+#languageSelect {
+  height: 32px;
+  min-height: 32px;
+  padding: 0 11px;
+  border: 1px solid rgba(156, 0, 21, .15);
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  box-shadow: none;
+}
+.nav-actions .cart-trigger { background: #a82512; color: #fff; }
+.nav-actions .signup-trigger { background: #f4e8d9; color: #682b16; }
+.nav-actions .login-trigger { background: #fff; color: #682b16; }
+.nav-actions .signup-trigger:hover,
+.nav-actions .login-trigger:hover { background: #eedac5; color: #682b16; transform: none; }
+.nav-actions .cart-trigger:hover { background: #8c1e0d; transform: none; }
+.nav-actions .login-trigger.signed-in { background: #f4e8d9; }
+.cart-trigger strong { width: 17px; min-width: 17px; height: 17px; line-height: 17px; font-size: 10px; right: -5px; top: -6px; }
+#languageSelect { margin-left: 4px; background-color: #fffdf9; color: #70482f; cursor: pointer; flex-shrink: 0; }
+.nav-actions button:focus-visible,
+.nav-actions a:focus-visible,
+#languageSelect:focus-visible { outline: 2px solid #b95a23; outline-offset: 3px; }
+@media (min-width: 721px) and (max-width: 1080px) {
+  .topbar-main { flex-direction: row; align-items: center; flex-wrap: wrap; }
+  .nav-actions { margin-left: auto; flex-wrap: wrap; justify-content: flex-end; }
+}
+@media (max-width: 720px) {
+  .topbar-main { width: 100%; gap: 10px; }
+  .nav-actions { width: 100%; gap: 6px; }
+  .nav-actions .cart-trigger,
+  .nav-actions .signup-trigger,
+  .nav-actions .login-trigger,
+  #languageSelect { font-size: 11px; padding: 0 8px; }
+  #languageSelect { margin-left: auto; max-width: 90px; }
+}
+@media (max-width: 360px) {
+  .nav-actions { gap: 4px; }
+  .nav-actions .cart-trigger,
+  .nav-actions .signup-trigger,
+  .nav-actions .login-trigger,
+  #languageSelect { padding: 0 6px; font-size: 10px; }
+}
